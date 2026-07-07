@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós — Interfy Corporation</title>
+  <meta name="description" content="Conheça a Interfy Corporation, um ecossistema corporativo global composto por empresas, plataformas e marcas digitais que conectam tecnologia, inovação e pessoas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <img src="https://www.figma.com/api/mcp/asset/3dda946e-75ab-407f-85c6-aa4d0248e337" alt="Interfy Corporation" class="header__logo-img" width="160" height="42">
+      </a>
+      <nav class="header__nav" id="headerNav">
+        <a href="index.html" class="header__nav-item">Início</a>
+        <a href="sobre-nos.html" class="header__nav-item header__nav-item--active">Sobre Nós</a>
+        <a href="ecossistema-global.html" class="header__nav-item">Ecossistema Global</a>
+        <a href="empresas.html" class="header__nav-item">Empresas</a>
+        <a href="contato.html" class="header__nav-item">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <div class="header__lang-wrap" id="langSelector">
+          <button class="header__lang" aria-label="Selecionar idioma" id="langBtn">
+            <span class="header__lang-flag-wrap">
+              <img src="assets/images/flags/flag-br.svg" alt="" class="header__lang-flag-img" id="langFlagImg">
+            </span>
+            <span class="header__lang-text" id="langLabel">BR</span>
+            <span class="header__lang-arrow-wrap" id="langArrowWrap">
+              <svg class="header__lang-arrow" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 2.27027L1.16667 6L0 4.86486L5 0L10 4.86486L8.83333 6L5 2.27027Z" fill="currentColor"/></svg>
+            </span>
+          </button>
+          <div class="header__lang-dropdown" id="langDropdown" aria-hidden="true">
+            <button class="header__lang-item header__lang-item--active" data-lang="pt" data-label="BR" data-flag="assets/images/flags/flag-br.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-br.svg" alt=""></span>
+              <span class="header__lang-item-label">Português (BR)</span>
+            </button>
+            <button class="header__lang-item" data-lang="en" data-label="EN" data-flag="assets/images/flags/flag-usa-30px.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-usa-30px.svg" alt=""></span>
+              <span class="header__lang-item-label">English (USA)</span>
+            </button>
+            <button class="header__lang-item" data-lang="en-gb" data-label="GB" data-flag="assets/images/flags/flag-uk.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-uk.svg" alt=""></span>
+              <span class="header__lang-item-label">English (England)</span>
+            </button>
+            <button class="header__lang-item" data-lang="pt-pt" data-label="PT" data-flag="assets/images/flags/flag-pt.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-pt.svg" alt=""></span>
+              <span class="header__lang-item-label">Português (Portugal)</span>
+            </button>
+            <button class="header__lang-item" data-lang="es" data-label="ES" data-flag="assets/images/flags/flag-es.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-es.svg" alt=""></span>
+              <span class="header__lang-item-label">Español</span>
+            </button>
+            <button class="header__lang-item" data-lang="fr" data-label="FR" data-flag="assets/images/flags/flag-fr.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-fr.svg" alt=""></span>
+              <span class="header__lang-item-label">Français</span>
+            </button>
+            <button class="header__lang-item" data-lang="de" data-label="DE" data-flag="assets/images/flags/flag-de.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-de.svg" alt=""></span>
+              <span class="header__lang-item-label">Deutsch</span>
+            </button>
+            <button class="header__lang-item" data-lang="it" data-label="IT" data-flag="assets/images/flags/flag-it.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-it.svg" alt=""></span>
+              <span class="header__lang-item-label">Italiano</span>
+            </button>
+            <button class="header__lang-item" data-lang="zh" data-label="中文" data-flag="assets/images/flags/flag-zh.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-zh.svg" alt=""></span>
+              <span class="header__lang-item-label">中文</span>
+            </button>
+            <button class="header__lang-item" data-lang="ja" data-label="日本語" data-flag="assets/images/flags/flag-ja.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ja.svg" alt=""></span>
+              <span class="header__lang-item-label">日本語</span>
+            </button>
+            <button class="header__lang-item" data-lang="ko" data-label="한국어" data-flag="assets/images/flags/flag-ko.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ko.svg" alt=""></span>
+              <span class="header__lang-item-label">한국어</span>
+            </button>
+            <button class="header__lang-item" data-lang="sv" data-label="SV" data-flag="assets/images/flags/flag-sv.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-sv.svg" alt=""></span>
+              <span class="header__lang-item-label">Svenska</span>
+            </button>
+            <button class="header__lang-item" data-lang="fi" data-label="FI" data-flag="assets/images/flags/flag-fi.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-fi.svg" alt=""></span>
+              <span class="header__lang-item-label">Suomi</span>
+            </button>
+            <button class="header__lang-item" data-lang="ru" data-label="RU" data-flag="assets/images/flags/flag-ru.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ru.svg" alt=""></span>
+              <span class="header__lang-item-label">Русский</span>
+            </button>
+            <button class="header__lang-item" data-lang="ro" data-label="RO" data-flag="assets/images/flags/flag-ro.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ro.svg" alt=""></span>
+              <span class="header__lang-item-label">Română</span>
+            </button>
+            <button class="header__lang-item" data-lang="he" data-label="HE" data-flag="assets/images/flags/flag-he.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-he.svg" alt=""></span>
+              <span class="header__lang-item-label">עברית</span>
+            </button>
+          </div>
+        </div>
+        <button class="header__mobile-toggle" id="mobileMenuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== BANNER SOBRE NÓS ===== -->
+    <section class="banner-sobre" id="inicio">
+      <!-- Desktop background (full) -->
+      <img src="https://www.figma.com/api/mcp/asset/41f5e53a-621e-4f6d-b769-c402a942e17a" alt="" class="banner-sobre__bg banner-sobre__bg--desktop" aria-hidden="true">
+      <!-- Mobile background (≤1024px) -->
+      <img src="assets/images/banner-sobre-mobile.png" alt="" class="banner-sobre__bg banner-sobre__bg--mobile" aria-hidden="true">
+      <div class="banner-sobre__inner container">
+        <div class="banner-sobre__content">
+          <div class="banner-sobre__text-block">
+            <div class="banner-sobre__label-pill">
+              <img src="https://www.figma.com/api/mcp/asset/1590c765-49db-41cf-8aa0-329db8c56d45" alt="" class="banner-sobre__label-icon">
+              <span class="banner-sobre__label-text">SOBRE NÓS</span>
+            </div>
+            <h1 class="banner-sobre__title">Sobre a Interfy Corporation</h1>
+            <p class="banner-sobre__subtitle">Um ecossistema corporativo global que conecta empresas, plataformas e marcas digitais.</p>
+            <p class="banner-sobre__desc">Criado em Orlando, Flórida, EUA, a Interfy Corporation reúne empresas, plataformas e marcas com atuação integrada em tecnologia, água, mobilidade, mídia e soluções empresariais. Nosso objetivo é impulsionar crescimento conectado, inovação e geração de valor em mercados globais.</p>
+          </div>
+          <!-- World map image — hidden on desktop, shown on ≤1024px -->
+          <div class="banner-sobre__map-block" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/6b807831-a47c-40e2-8ea8-7021dd6c6649" alt="" class="banner-sobre__map-img">
+          </div>
+          <div class="banner-sobre__visual" aria-hidden="true"></div>
+        </div>
+        <div class="banner-sobre__stats">
+
+          <div class="banner-sobre__stat-card">
+            <div class="banner-sobre__stat-icon-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/211f7dfe-d479-4d05-a047-e2f5b217c10a" alt="" class="banner-sobre__stat-icon-img">
+            </div>
+            <div class="banner-sobre__stat-info">
+              <span class="banner-sobre__stat-number">180+</span>
+              <span class="banner-sobre__stat-label">Países Prontos</span>
+            </div>
+          </div>
+
+          <div class="banner-sobre__stat-card">
+            <div class="banner-sobre__stat-icon-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/162204d5-5c2c-48a4-b833-42ccae0bffab" alt="" class="banner-sobre__stat-icon-img">
+            </div>
+            <div class="banner-sobre__stat-info">
+              <span class="banner-sobre__stat-number">16</span>
+              <span class="banner-sobre__stat-label">Idiomas</span>
+            </div>
+          </div>
+
+          <div class="banner-sobre__stat-card">
+            <div class="banner-sobre__stat-icon-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/df30e786-81b7-4b17-844c-44783ca40f95" alt="" class="banner-sobre__stat-icon-img">
+            </div>
+            <div class="banner-sobre__stat-info">
+              <span class="banner-sobre__stat-number">+1000</span>
+              <span class="banner-sobre__stat-label">Parceiros globais</span>
+            </div>
+          </div>
+
+          <div class="banner-sobre__stat-card">
+            <div class="banner-sobre__stat-icon-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/724d8722-e77f-4759-9a37-e9f57cd00416" alt="" class="banner-sobre__stat-icon-img">
+            </div>
+            <div class="banner-sobre__stat-info">
+              <span class="banner-sobre__stat-number">10</span>
+              <span class="banner-sobre__stat-label">Empresas e Marcas</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUEM SOMOS ===== -->
+    <section class="quem-somos" id="sobre">
+      <div class="quem-somos__inner container">
+
+        <div class="quem-somos__card">
+          <h2 class="quem-somos__title">Quem Somos</h2>
+          <div class="quem-somos__line-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/0f3afa71-9698-4dbe-a079-00c15375f45b" alt="" class="quem-somos__line-img">
+          </div>
+          <div class="quem-somos__text">
+            <p>A Interfy Corporation é um grupo americano que organiza e impulsiona um ecossistema de empresas e marcas independentes, criando sinergia entre negócios, tecnologia e inovação.</p>
+            <p>Nossa estrutura foi pensada para atuar de forma global, com presença digital, estratégia comercial e visão escalável.</p>
+          </div>
+        </div>
+
+        <div class="quem-somos__image-wrap">
+          <img src="https://www.figma.com/api/mcp/asset/27f8fca0-1150-4ad5-bb7b-7b9018bf0156" alt="Equipe Interfy Corporation" class="quem-somos__image">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== MISSÃO / VISÃO / VALORES ===== -->
+    <section class="mvv">
+      <div class="mvv__inner container">
+
+        <!-- Nossa Missão -->
+        <div class="mvv__card">
+          <div class="mvv__card-header">
+            <div class="mvv__icon-wrap mvv__icon-wrap--azul">
+              <img src="https://www.figma.com/api/mcp/asset/a2e6ce63-2503-4d31-8368-8c7c38e4aa88" alt="" class="mvv__icon-img">
+            </div>
+            <div class="mvv__title-wrap">
+              <h3 class="mvv__title mvv__title--azul">Nossa Missão</h3>
+              <div class="mvv__underline-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/2dbc8243-e2f5-40f3-adbc-42bcb0c446e1" alt="" class="mvv__underline-img">
+              </div>
+            </div>
+          </div>
+          <p class="mvv__desc">Conectar empresas, pessoas e tecnologia para transformar ideias em soluções escaláveis e sustentáveis.</p>
+        </div>
+
+        <!-- Nossa Visão -->
+        <div class="mvv__card">
+          <div class="mvv__card-header">
+            <div class="mvv__icon-wrap mvv__icon-wrap--gradient">
+              <img src="https://www.figma.com/api/mcp/asset/31e147e5-790c-4a73-9d19-693f186221e3" alt="" class="mvv__icon-img">
+            </div>
+            <div class="mvv__title-wrap">
+              <h3 class="mvv__title mvv__title--gradient text-gradient-plus">Nossa Visão</h3>
+              <div class="mvv__underline-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/a17e5fb7-4684-4830-acbe-0266949b46d1" alt="" class="mvv__underline-img">
+              </div>
+            </div>
+          </div>
+          <p class="mvv__desc">Ser referência global em ecossistemas empresariais conectados, com inovação, confiança e crescimento contínuo.</p>
+        </div>
+
+        <!-- Nossos Valores -->
+        <div class="mvv__card">
+          <div class="mvv__card-header">
+            <div class="mvv__icon-wrap mvv__icon-wrap--verde">
+              <img src="https://www.figma.com/api/mcp/asset/e89f4c04-bea7-4573-9266-9fa35b1caedc" alt="" class="mvv__icon-img">
+            </div>
+            <div class="mvv__title-wrap">
+              <h3 class="mvv__title mvv__title--verde">Nossos Valores</h3>
+              <div class="mvv__underline-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/d78e8ec7-a0a2-49e3-aebb-264412609f96" alt="" class="mvv__underline-img">
+              </div>
+            </div>
+          </div>
+          <div class="mvv__values-grid">
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/4e8a0430-586f-4a0f-b940-5ab5d08e10af" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Inovação</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/8e98819e-c946-4a76-a05c-48ff2d3f4e18" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Confiança</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/0e1106cf-f064-4066-9b8a-bffd4d51a1ab" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Visão Global</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/7c96ba14-5260-4ed6-a9cb-9b74b42be41d" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Tecnologia</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/eb086398-b737-40d1-b7f5-496874b0eb1d" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Experiência do Cliente</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/9be3265d-11e8-4879-b510-8281b909ffdb" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Escalabilidade</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/2f40065a-c207-4cb0-a48f-0d4172d4e3da" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Sustentabilidade</span>
+            </div>
+            <div class="mvv__value-item">
+              <img src="https://www.figma.com/api/mcp/asset/b2e7b6c9-2177-4c85-b426-7e9a527bd34d" alt="" class="mvv__value-icon">
+              <span class="mvv__value-label">Crescimento Conectado</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== NOSSAS EMPRESAS E MARCAS ===== -->
+    <section class="empresas" id="empresas">
+      <div class="empresas__inner container">
+        <h2 class="empresas__title">Nossas Empresas e Marcas</h2>
+        <div class="empresas__title-line"></div>
+        <div class="empresas__grid">
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/fe9b638f-7fc2-44f0-9624-911249d2f5d3" alt="Ecofy" class="empresa-card__logo" width="160" height="41.82">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Soluções sustentáveis para um planeta melhor.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/3fcdf2fc-5695-4a76-bd3a-eb4f8fbc3483" alt="Injectra" class="empresa-card__logo" width="160" height="44.27">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Tecnologia Americana de Moldagem por Injeção</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/ba566fbd-5a3f-48f1-8ee8-75d7b6975112" alt="Innovecar" class="empresa-card__logo" width="160" height="44">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Mobilidade inteligente e acessível.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/1d26020d-8417-4186-8c20-4f1fb464cc7e" alt="NeoAI" class="empresa-card__logo" width="143.8" height="50">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Plataforma de IA-Nativa.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/477e6db5-8d9d-469e-b2c8-9a5de3ba6ee6" alt="ProcessDoc" class="empresa-card__logo" width="160" height="31.77">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Gestão inteligente de processos e documentos.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/4edba761-d00a-4eda-8f0e-15aa15ead4a8" alt="Acquafy" class="empresa-card__logo" width="160" height="27">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Soluções avançadas de água purificada.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/c68f9de1-71e0-448c-bc60-b403b97293f4" alt="Interfy" class="empresa-card__logo" width="160" height="40.19">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Plataforma digital para negócios e serviços.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/0ab672f2-772b-463e-b662-4c219b425a1e" alt="Visionfy" class="empresa-card__logo" width="160" height="36.77">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Análise de dados e IA para decisões melhores.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/3b0c40ca-7f99-4525-a16b-16d7b409f202" alt="Mediafy" class="empresa-card__logo" width="160" height="42">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Marketing e produção de conteúdo digital.</p>
+          </a>
+
+          <a href="empresas.html" class="empresa-card">
+            <div class="empresa-card__logo-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/344e113f-902e-44ea-9b06-cd42b65d7799" alt="DocSystem" class="empresa-card__logo" width="160" height="40.67">
+            </div>
+            <div class="empresa-card__divider"></div>
+            <p class="empresa-card__desc">Soluções documentais corporativas completas.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRESENÇA E ESTRUTURA ===== -->
+    <section class="ctstats">
+      <div class="ctstats__inner container">
+
+        <div class="ctstat">
+          <div class="ctstat__top">
+            <img src="https://www.figma.com/api/mcp/asset/98c75bc2-956c-4ada-9edc-605fc6d950d8" alt="" class="ctstat__icon">
+            <div class="ctstat__nums">
+              <span class="ctstat__number ctstat__number--blue">180+</span>
+              <span class="ctstat__name">Países preparados</span>
+            </div>
+          </div>
+          <p class="ctstat__desc">Presença global e expansão contínua.</p>
+        </div>
+
+        <div class="ctstat">
+          <div class="ctstat__top">
+            <img src="https://www.figma.com/api/mcp/asset/4167715f-9485-4ce7-83b1-0c0b446791a7" alt="" class="ctstat__icon">
+            <div class="ctstat__nums">
+              <span class="ctstat__number ctstat__number--verde">16</span>
+              <span class="ctstat__name">Idiomas</span>
+            </div>
+          </div>
+          <p class="ctstat__desc">Plataformas multilíngues e experiências locais.</p>
+        </div>
+
+        <div class="ctstat">
+          <div class="ctstat__top">
+            <img src="https://www.figma.com/api/mcp/asset/be93fae9-dc3a-458f-89fc-98bd4af4ff22" alt="" class="ctstat__icon">
+            <div class="ctstat__nums">
+              <span class="ctstat__number ctstat__number--amarelo">6</span>
+              <span class="ctstat__name">Regiões comerciais</span>
+            </div>
+          </div>
+          <p class="ctstat__desc">Estratégia adaptadas para cada mercado.</p>
+        </div>
+
+        <div class="ctstat">
+          <div class="ctstat__top">
+            <img src="https://www.figma.com/api/mcp/asset/500e619c-a7e7-487b-8cdd-889fb165aad7" alt="" class="ctstat__icon">
+            <div class="ctstat__nums">
+              <span class="ctstat__number ctstat__number--gd">10</span>
+              <span class="ctstat__name">Empresas e marcas</span>
+            </div>
+          </div>
+          <p class="ctstat__desc">Marcas independentes. Uma visão conectada.</p>
+        </div>
+
+        <div class="ctstat">
+          <div class="ctstat__top">
+            <img src="https://www.figma.com/api/mcp/asset/6e2f4ba7-9602-429e-a140-44b53073919f" alt="" class="ctstat__icon">
+            <div class="ctstat__nums">
+              <img src="https://www.figma.com/api/mcp/asset/efef4b79-3f9a-42dc-b22a-a0ceee0a3248" alt="∞" class="ctstat__infinity-img">
+              <span class="ctstat__number ctstat__number--orange">Oportunidades</span>
+            </div>
+          </div>
+          <p class="ctstat__desc">Inovação, crescimento e novas possibilidades.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PARCERIA CTA ===== -->
+    <section class="parceria">
+      <div class="parceria__inner container">
+        <div class="parceria__icon-box">
+          <img src="https://www.figma.com/api/mcp/asset/d931123c-e484-40f2-94fb-3eb64fc78400" alt="" class="parceria__icon-img">
+        </div>
+        <div class="parceria__text">
+          <h2 class="parceria__title">Vamos construir o futuro dos negócios conectados.</h2>
+          <p class="parceria__desc">Estamos sempre abertos a novas parcerias, colaborações e oportunidades ao redor do mundo.</p>
+        </div>
+        <a href="mailto:contato@interfycorp.com" class="parceria__btn">
+          <img src="https://www.figma.com/api/mcp/asset/08f41d44-5391-4ca6-8d70-f6b337f6d54b" alt="" class="parceria__btn-icon">
+          <span>Falar com a Interfy Corp</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contato">
+    <img src="https://www.figma.com/api/mcp/asset/6fd2f1d9-16e1-4d61-8507-f970b7127c92" alt="" class="footer__bg" aria-hidden="true">
+    <div class="footer__main container">
+      <div class="footer__brand">
+        <img src="https://www.figma.com/api/mcp/asset/37e67fa8-d3ce-4b1c-a4c1-90989f398dea" alt="Interfy Corporation" class="footer__logo">
+        <p class="footer__brand-desc">O Interfy Corporation é um ecossistema corporativo composto por empresas, plataformas e marcas digitais que conectam tecnologia, inovação e pessoas para gerar impacto global sustentável.</p>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-header">
+          <h4 class="footer__col-title">Grupo</h4>
+          <div class="footer__col-line"></div>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="sobre-nos.html" class="footer__link">
+              <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
+              Sobre a Interfy Corporation
+            </a>
+          </li>
+          <li>
+            <a href="empresas.html" class="footer__link">
+              <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
+              Nossas Empresas e Marcas
+            </a>
+          </li>
+          <li>
+            <a href="ecossistema-global.html" class="footer__link">
+              <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
+              Ecossistema Global
+            </a>
+          </li>
+          <li>
+            <a href="contato.html" class="footer__link">
+              <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--companias">
+        <div class="footer__col-header">
+          <h4 class="footer__col-title">Companias</h4>
+          <div class="footer__col-line"></div>
+        </div>
+        <div class="footer__companias-grid">
+          <ul class="footer__links footer__links--companias">
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Ecofy</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Injectra</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Innovecar</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> NeoAI</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> ProcessDoc</a></li>
+          </ul>
+          <ul class="footer__links footer__links--companias">
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Acquafy</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Interfy</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Visionfy</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Mediafy</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> DocSystem</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--contato">
+        <div class="footer__col-header">
+          <h4 class="footer__col-title">Contato</h4>
+          <div class="footer__col-line"></div>
+        </div>
+        <div class="footer__contact-info">
+          <div class="footer__contact-item">
+            <img src="https://www.figma.com/api/mcp/asset/78711b33-82dd-4b50-beca-c6513ec6b74a" alt="" class="footer__contact-icon">
+            <span>Orlando, Flórida, EUA</span>
+          </div>
+          <div class="footer__contact-item">
+            <img src="https://www.figma.com/api/mcp/asset/29a6459d-20ca-4c1d-b448-33deb08ab4af" alt="" class="footer__contact-icon">
+            <span>contato@interfycorp.com</span>
+          </div>
+        </div>
+        <a href="contato.html" class="footer__cta-btn">
+          Falar com o Interfy Corp
+          <span class="btn__arrow-wrap"><img src="https://www.figma.com/api/mcp/asset/9abdb47e-9589-46a0-9391-b7005f758a0a" alt="" class="btn__arrow"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__stats-wrap">
+      <div class="footer__stats container">
+        <div class="footer__stat">
+          <div class="footer__stat-icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/ae883b01-2021-415e-a9ca-7492098ff0dc" alt="" class="footer__stat-icon-img">
+          </div>
+          <div class="footer__stat-text">
+            <span class="footer__stat-number">180+</span>
+            <span class="footer__stat-label">Operando em mais de 180 países</span>
+          </div>
+        </div>
+        <div class="footer__stat">
+          <div class="footer__stat-icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/a8b8890b-c9f6-49be-a1c0-6a2a413e1949" alt="" class="footer__stat-icon-img">
+          </div>
+          <div class="footer__stat-text">
+            <span class="footer__stat-number">16</span>
+            <span class="footer__stat-label">Disponível em 16 idiomas</span>
+          </div>
+        </div>
+        <div class="footer__stat">
+          <div class="footer__stat-icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/4047fe77-7f70-45c3-87ee-2bc9c333231a" alt="" class="footer__stat-icon-img">
+          </div>
+          <div class="footer__stat-text">
+            <span class="footer__stat-number">+1000</span>
+            <span class="footer__stat-label">Parceiros globais</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner container">
+        <p class="footer__copyright">Interfy Corporation © 2026. Todos os direitos reservados.</p>
+        <div class="footer__legal">
+          <a href="politica-privacidade.html" class="footer__legal-link">Políticas de Privacidade</a>
+          <span class="footer__legal-sep" aria-hidden="true">|</span>
+          <a href="termos-de-uso.html" class="footer__legal-link">Termos de Uso</a>
+          <span class="footer__legal-sep" aria-hidden="true">|</span>
+          <a href="cookies.html" class="footer__legal-link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
