@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -15,25 +15,94 @@
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="header__inner container">
-      <a href="#" class="header__logo">
+      <a href="index.html" class="header__logo">
         <img src="https://www.figma.com/api/mcp/asset/3dda946e-75ab-407f-85c6-aa4d0248e337" alt="Interfy Corporation" class="header__logo-img" width="160" height="42">
       </a>
       <nav class="header__nav" id="headerNav">
-        <a href="#inicio" class="header__nav-item header__nav-item--active">Início</a>
-        <a href="#sobre" class="header__nav-item">Sobre</a>
-        <a href="#ecossistema" class="header__nav-item">Ecossistema Global</a>
-        <a href="#contato" class="header__nav-item">Contato</a>
+        <a href="index.html" class="header__nav-item header__nav-item--active">Início</a>
+        <a href="sobre-nos.html" class="header__nav-item">Sobre Nós</a>
+        <a href="ecossistema-global.html" class="header__nav-item">Ecossistema Global</a>
+        <a href="empresas.html" class="header__nav-item">Empresas</a>
+        <a href="contato.html" class="header__nav-item">Contato</a>
       </nav>
       <div class="header__actions">
-        <button class="header__lang" aria-label="Selecionar idioma">
-          <img src="https://www.figma.com/api/mcp/asset/43b85bb8-1c7e-442c-8a9e-952ff73e99da" alt="" class="header__lang-icon">
-          <span class="header__lang-text">BR</span>
-          <img src="https://www.figma.com/api/mcp/asset/27edcc40-68c6-4d35-8749-127b95070b3c" alt="" class="header__lang-arrow">
-        </button>
-        <a href="#empresas" class="btn btn--primary-hd btn--pill">
-          <span>Explorar Empresas</span>
-          <span class="btn__arrow-wrap"><img src="https://www.figma.com/api/mcp/asset/e36461f2-19c8-49d3-94f4-80e856ddd7f0" alt="" class="btn__arrow"></span>
-        </a>
+        <div class="header__lang-wrap" id="langSelector">
+          <button class="header__lang" aria-label="Selecionar idioma" id="langBtn">
+            <span class="header__lang-flag-wrap">
+              <img src="assets/images/flags/flag-br.svg" alt="" class="header__lang-flag-img" id="langFlagImg">
+            </span>
+            <span class="header__lang-text" id="langLabel">BR</span>
+            <span class="header__lang-arrow-wrap" id="langArrowWrap">
+              <svg class="header__lang-arrow" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 2.27027L1.16667 6L0 4.86486L5 0L10 4.86486L8.83333 6L5 2.27027Z" fill="currentColor"/></svg>
+            </span>
+          </button>
+          <div class="header__lang-dropdown" id="langDropdown" aria-hidden="true">
+            <button class="header__lang-item header__lang-item--active" data-lang="pt" data-label="BR" data-flag="assets/images/flags/flag-br.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-br.svg" alt=""></span>
+              <span class="header__lang-item-label">Português (BR)</span>
+            </button>
+            <button class="header__lang-item" data-lang="en" data-label="EN" data-flag="assets/images/flags/flag-usa-30px.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-usa-30px.svg" alt=""></span>
+              <span class="header__lang-item-label">English (USA)</span>
+            </button>
+            <button class="header__lang-item" data-lang="en-gb" data-label="GB" data-flag="assets/images/flags/flag-uk.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-uk.svg" alt=""></span>
+              <span class="header__lang-item-label">English (England)</span>
+            </button>
+            <button class="header__lang-item" data-lang="pt-pt" data-label="PT" data-flag="assets/images/flags/flag-pt.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-pt.svg" alt=""></span>
+              <span class="header__lang-item-label">Português (Portugal)</span>
+            </button>
+            <button class="header__lang-item" data-lang="es" data-label="ES" data-flag="assets/images/flags/flag-es.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-es.svg" alt=""></span>
+              <span class="header__lang-item-label">Español</span>
+            </button>
+            <button class="header__lang-item" data-lang="fr" data-label="FR" data-flag="assets/images/flags/flag-fr.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-fr.svg" alt=""></span>
+              <span class="header__lang-item-label">Français</span>
+            </button>
+            <button class="header__lang-item" data-lang="de" data-label="DE" data-flag="assets/images/flags/flag-de.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-de.svg" alt=""></span>
+              <span class="header__lang-item-label">Deutsch</span>
+            </button>
+            <button class="header__lang-item" data-lang="it" data-label="IT" data-flag="assets/images/flags/flag-it.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-it.svg" alt=""></span>
+              <span class="header__lang-item-label">Italiano</span>
+            </button>
+            <button class="header__lang-item" data-lang="zh" data-label="中文" data-flag="assets/images/flags/flag-zh.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-zh.svg" alt=""></span>
+              <span class="header__lang-item-label">中文</span>
+            </button>
+            <button class="header__lang-item" data-lang="ja" data-label="日本語" data-flag="assets/images/flags/flag-ja.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ja.svg" alt=""></span>
+              <span class="header__lang-item-label">日本語</span>
+            </button>
+            <button class="header__lang-item" data-lang="ko" data-label="한국어" data-flag="assets/images/flags/flag-ko.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ko.svg" alt=""></span>
+              <span class="header__lang-item-label">한국어</span>
+            </button>
+            <button class="header__lang-item" data-lang="sv" data-label="SV" data-flag="assets/images/flags/flag-sv.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-sv.svg" alt=""></span>
+              <span class="header__lang-item-label">Svenska</span>
+            </button>
+            <button class="header__lang-item" data-lang="fi" data-label="FI" data-flag="assets/images/flags/flag-fi.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-fi.svg" alt=""></span>
+              <span class="header__lang-item-label">Suomi</span>
+            </button>
+            <button class="header__lang-item" data-lang="ru" data-label="RU" data-flag="assets/images/flags/flag-ru.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ru.svg" alt=""></span>
+              <span class="header__lang-item-label">Русский</span>
+            </button>
+            <button class="header__lang-item" data-lang="ro" data-label="RO" data-flag="assets/images/flags/flag-ro.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-ro.svg" alt=""></span>
+              <span class="header__lang-item-label">Română</span>
+            </button>
+            <button class="header__lang-item" data-lang="he" data-label="HE" data-flag="assets/images/flags/flag-he.svg">
+              <span class="header__lang-item-flag"><img src="assets/images/flags/flag-he.svg" alt=""></span>
+              <span class="header__lang-item-label">עברית</span>
+            </button>
+          </div>
+        </div>
         <button class="header__mobile-toggle" id="mobileMenuToggle" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -45,7 +114,8 @@
 
     <!-- ===== BANNER HOME ===== -->
     <section class="banner" id="inicio">
-      <img src="https://www.figma.com/api/mcp/asset/ee708257-70ad-4eca-b549-f16ff53917ec" alt="" class="banner__bg" aria-hidden="true">
+      <img src="assets/images/banner-home.png" alt="" class="banner__bg banner__bg--lg" aria-hidden="true">
+      <img src="assets/images/banner-home-mobile.png" alt="" class="banner__bg banner__bg--mobile" aria-hidden="true">
       <div class="banner__inner container">
         <div class="banner__content">
           <div class="banner__text-block">
@@ -65,12 +135,18 @@
               </a>
             </div>
           </div>
-          <div class="banner__visual" aria-hidden="true"></div>
+          <div class="banner__visual" aria-hidden="true">
+            <img src="assets/images/banner-home-1023.png" alt="" class="banner__visual-img">
+          </div>
         </div>
         <div class="banner__stats">
           <div class="banner__stat-card">
             <div class="banner__stat-icon banner__stat-icon--roxo">
-              <img src="https://www.figma.com/api/mcp/asset/012d4f12-c04d-4f01-9408-2cb52ff06357" alt="Países" class="banner__stat-icon-img">
+              <div class="banner__stat-icon-slot">
+                <div class="banner__stat-icon-inner">
+                  <img src="https://www.figma.com/api/mcp/asset/ccb45a39-3e14-428b-a23e-6d0fb6ab1b0b" alt="Países" class="banner__stat-icon-img">
+                </div>
+              </div>
             </div>
             <div class="banner__stat-info">
               <span class="banner__stat-number">180+</span>
@@ -79,7 +155,11 @@
           </div>
           <div class="banner__stat-card">
             <div class="banner__stat-icon banner__stat-icon--blue">
-              <img src="https://www.figma.com/api/mcp/asset/13ef8c0f-5c90-43ce-a677-5918ce90515d" alt="Idiomas" class="banner__stat-icon-img">
+              <div class="banner__stat-icon-slot">
+                <div class="banner__stat-icon-inner">
+                  <img src="https://www.figma.com/api/mcp/asset/c3d89c54-4e9f-4d89-8ff2-1984157213eb" alt="Idiomas" class="banner__stat-icon-img">
+                </div>
+              </div>
             </div>
             <div class="banner__stat-info">
               <span class="banner__stat-number">16</span>
@@ -88,16 +168,24 @@
           </div>
           <div class="banner__stat-card">
             <div class="banner__stat-icon banner__stat-icon--verde">
-              <img src="https://www.figma.com/api/mcp/asset/e51856dc-4337-4020-90d2-0f712420064b" alt="Regiões" class="banner__stat-icon-img">
+              <div class="banner__stat-icon-slot">
+                <div class="banner__stat-icon-inner">
+                  <img src="https://www.figma.com/api/mcp/asset/f8567f63-c152-4061-bafc-480261c1d4de" alt="Parceiros" class="banner__stat-icon-img">
+                </div>
+              </div>
             </div>
             <div class="banner__stat-info">
-              <span class="banner__stat-number">6</span>
-              <span class="banner__stat-label">Regiões Comerciais</span>
+              <span class="banner__stat-number">+1000</span>
+              <span class="banner__stat-label">Parceiros globais</span>
             </div>
           </div>
           <div class="banner__stat-card">
             <div class="banner__stat-icon banner__stat-icon--amarelo">
-              <img src="https://www.figma.com/api/mcp/asset/d730fbd0-1246-4976-93e2-86f6a85046cc" alt="Empresas" class="banner__stat-icon-img">
+              <div class="banner__stat-icon-slot">
+                <div class="banner__stat-icon-inner">
+                  <img src="https://www.figma.com/api/mcp/asset/a524b269-a454-495c-9b0a-8e9ea4553931" alt="Empresas" class="banner__stat-icon-img">
+                </div>
+              </div>
             </div>
             <div class="banner__stat-info">
               <span class="banner__stat-number">10</span>
@@ -118,7 +206,7 @@
             <p>A Interfy Corporation é um ecossistema corporativo global composto por empresas, plataformas e marcas que atuam em sinergia para impulsionar inovação, eficiência e crescimento em múltiplos mercados.</p>
             <p>Com tecnologia de ponta, soluções sustentáveis e foco nas pessoas, conectamos ideias a oportunidades reais, promovendo colaboração, transformação digital e impacto positivo em todo o mundo.</p>
           </div>
-          <a href="#" class="btn btn--outline btn--rounded">
+          <a href="sobre-nos.html" class="btn btn--outline btn--rounded">
             <span class="btn__text-gradient">Saiba mais sobre a Interfy Corporation</span>
             <span class="btn__arrow-wrap"><img src="https://www.figma.com/api/mcp/asset/174119b5-cb74-4867-832b-11317e3bcb45" alt="" class="btn__arrow-outline"></span>
           </a>
@@ -167,97 +255,88 @@
     <section class="empresas" id="empresas">
       <div class="empresas__inner container">
         <h2 class="empresas__title">Nossas Empresas e Marcas</h2>
+        <div class="empresas__title-line"></div>
         <div class="empresas__grid">
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/3dde0633-d56a-420d-969a-36de40c97e6f" alt="Ecofy" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/fe9b638f-7fc2-44f0-9624-911249d2f5d3" alt="Ecofy" class="empresa-card__logo" width="160" height="41.82">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Ecofy</h3>
             <p class="empresa-card__desc">Soluções sustentáveis para um planeta melhor.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/49b6f7f5-496f-4334-9877-ead437c93b8d" alt="Interfy Shopp" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/3fcdf2fc-5695-4a76-bd3a-eb4f8fbc3483" alt="Injectra" class="empresa-card__logo" width="160" height="44.27">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Interfy Shopp</h3>
-            <p class="empresa-card__desc">Experiência de compras inteligentes para todos.</p>
-          </div>
+            <p class="empresa-card__desc">Tecnologia Americana de Moldagem por Injeção</p>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/f3113493-a0ae-4058-9141-081c9998f3cf" alt="Innovecar" class="empresa-card__logo empresa-card__logo--wide">
+              <img src="https://www.figma.com/api/mcp/asset/ba566fbd-5a3f-48f1-8ee8-75d7b6975112" alt="Innovecar" class="empresa-card__logo" width="160" height="44">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Innovecar</h3>
             <p class="empresa-card__desc">Mobilidade inteligente e acessível.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/0e99b0c9-4bae-4053-99c3-005f2be89edc" alt="NeoAI" class="empresa-card__logo empresa-card__logo--narrow">
+              <img src="https://www.figma.com/api/mcp/asset/1d26020d-8417-4186-8c20-4f1fb464cc7e" alt="NeoAI" class="empresa-card__logo" width="143.8" height="50">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">NeoAI</h3>
-            <p class="empresa-card__desc">Plataforma de negócios conectados com IA.</p>
-          </div>
+            <p class="empresa-card__desc">Plataforma de IA-Nativa.</p>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/b98078c9-95e2-4868-8c4d-916e9add4b31" alt="ProcessDoc" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/477e6db5-8d9d-469e-b2c8-9a5de3ba6ee6" alt="ProcessDoc" class="empresa-card__logo" width="160" height="31.77">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">ProcessDoc</h3>
             <p class="empresa-card__desc">Gestão inteligente de processos e documentos.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/f690f231-3ccf-45cc-9bf1-3af3c50449f8" alt="Acquafy" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/4edba761-d00a-4eda-8f0e-15aa15ead4a8" alt="Acquafy" class="empresa-card__logo" width="160" height="27">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Acquafy</h3>
             <p class="empresa-card__desc">Soluções avançadas de água purificada.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/d364c8f6-1c44-42f9-8537-0e5db141594f" alt="Interfy" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/c68f9de1-71e0-448c-bc60-b403b97293f4" alt="Interfy" class="empresa-card__logo" width="160" height="40.19">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Interfy</h3>
             <p class="empresa-card__desc">Plataforma digital para negócios e serviços.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/5b8bd0f6-624a-4bdd-937d-11079b2371de" alt="Visionfy" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/0ab672f2-772b-463e-b662-4c219b425a1e" alt="Visionfy" class="empresa-card__logo" width="160" height="36.77">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Visionfy</h3>
             <p class="empresa-card__desc">Análise de dados e IA para decisões melhores.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/67806e7e-d2fc-4738-9547-6f9ae637ca12" alt="Mediafy" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/3b0c40ca-7f99-4525-a16b-16d7b409f202" alt="Mediafy" class="empresa-card__logo" width="160" height="42">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">Mediafy</h3>
             <p class="empresa-card__desc">Marketing e produção de conteúdo digital.</p>
-          </div>
+          </a>
 
-          <div class="empresa-card">
+          <a href="empresas.html" class="empresa-card">
             <div class="empresa-card__logo-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/139205f7-ce72-42d7-8484-5aa6e84910c6" alt="DocSystem" class="empresa-card__logo">
+              <img src="https://www.figma.com/api/mcp/asset/344e113f-902e-44ea-9b06-cd42b65d7799" alt="DocSystem" class="empresa-card__logo" width="160" height="40.67">
             </div>
             <div class="empresa-card__divider"></div>
-            <h3 class="empresa-card__name">DocSystem</h3>
             <p class="empresa-card__desc">Soluções documentais corporativas completas.</p>
-          </div>
+          </a>
 
         </div>
       </div>
@@ -350,10 +429,6 @@
       <div class="footer__brand">
         <img src="https://www.figma.com/api/mcp/asset/37e67fa8-d3ce-4b1c-a4c1-90989f398dea" alt="Interfy Corporation" class="footer__logo">
         <p class="footer__brand-desc">O Interfy Corporation é um ecossistema corporativo composto por empresas, plataformas e marcas digitais que conectam tecnologia, inovação e pessoas para gerar impacto global sustentável.</p>
-        <div class="footer__badge">
-          <img src="https://www.figma.com/api/mcp/asset/172d8ed9-d644-40e0-9d36-596dd0b4c291" alt="" class="footer__badge-icon">
-          <span class="footer__badge-text text-gradient-claro">ECOSSISTEMA DE NEGÓCIOS GLOBAL</span>
-        </div>
       </div>
 
       <div class="footer__col">
@@ -363,25 +438,25 @@
         </div>
         <ul class="footer__links">
           <li>
-            <a href="#sobre" class="footer__link">
+            <a href="sobre-nos.html" class="footer__link">
               <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
-              Sobre o Interfy Corporation
+              Sobre a Interfy Corporation
             </a>
           </li>
           <li>
-            <a href="#empresas" class="footer__link">
+            <a href="empresas.html" class="footer__link">
               <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
               Nossas Empresas e Marcas
             </a>
           </li>
           <li>
-            <a href="#ecossistema" class="footer__link">
+            <a href="ecossistema-global.html" class="footer__link">
               <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
               Ecossistema Global
             </a>
           </li>
           <li>
-            <a href="#contato" class="footer__link">
+            <a href="contato.html" class="footer__link">
               <img src="https://www.figma.com/api/mcp/asset/598abad4-1dfd-4f56-adae-9d31c8905514" alt="" class="footer__link-arrow-img">
               Contato
             </a>
@@ -397,7 +472,7 @@
         <div class="footer__companias-grid">
           <ul class="footer__links footer__links--companias">
             <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Ecofy</a></li>
-            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Interfy Shop</a></li>
+            <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Injectra</a></li>
             <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> Innovecar</a></li>
             <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> NeoAI</a></li>
             <li><a href="#" class="footer__link"><img src="https://www.figma.com/api/mcp/asset/cf2a4d1c-d89f-4a41-9387-98dde5ecbcdd" alt="" class="footer__check"> ProcessDoc</a></li>
@@ -427,7 +502,7 @@
             <span>contato@interfycorp.com</span>
           </div>
         </div>
-        <a href="mailto:contato@interfycorp.com" class="footer__cta-btn">
+        <a href="contato.html" class="footer__cta-btn">
           Falar com o Interfy Corp
           <span class="btn__arrow-wrap"><img src="https://www.figma.com/api/mcp/asset/9abdb47e-9589-46a0-9391-b7005f758a0a" alt="" class="btn__arrow"></span>
         </a>
@@ -442,7 +517,7 @@
           </div>
           <div class="footer__stat-text">
             <span class="footer__stat-number">180+</span>
-            <span class="footer__stat-label">Operando em até 180 países</span>
+            <span class="footer__stat-label">Operando em mais de 180 países</span>
           </div>
         </div>
         <div class="footer__stat">
@@ -456,11 +531,11 @@
         </div>
         <div class="footer__stat">
           <div class="footer__stat-icon-wrap">
-            <img src="https://www.figma.com/api/mcp/asset/fef50784-0021-482a-8c76-2573a468b60e" alt="" class="footer__stat-icon-img">
+            <img src="https://www.figma.com/api/mcp/asset/4047fe77-7f70-45c3-87ee-2bc9c333231a" alt="" class="footer__stat-icon-img">
           </div>
           <div class="footer__stat-text">
-            <span class="footer__stat-number">6</span>
-            <span class="footer__stat-label">Presente em 6 regiões comerciais</span>
+            <span class="footer__stat-number">+1000</span>
+            <span class="footer__stat-label">Parceiros globais</span>
           </div>
         </div>
       </div>
@@ -470,11 +545,11 @@
       <div class="footer__bottom-inner container">
         <p class="footer__copyright">Interfy Corporation © 2026. Todos os direitos reservados.</p>
         <div class="footer__legal">
-          <a href="#" class="footer__legal-link">Políticas de Privacidade</a>
+          <a href="politica-privacidade.html" class="footer__legal-link">Políticas de Privacidade</a>
           <span class="footer__legal-sep" aria-hidden="true">|</span>
-          <a href="#" class="footer__legal-link">Termos de Uso</a>
+          <a href="termos-de-uso.html" class="footer__legal-link">Termos de Uso</a>
           <span class="footer__legal-sep" aria-hidden="true">|</span>
-          <a href="#" class="footer__legal-link">Cookies</a>
+          <a href="cookies.html" class="footer__legal-link">Cookies</a>
         </div>
       </div>
     </div>
